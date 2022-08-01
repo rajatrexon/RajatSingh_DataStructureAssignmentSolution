@@ -11,7 +11,7 @@ public static void main(String[] args) {
 	ArrayList<Integer> array = new ArrayList<>();
 	PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
 	Scanner sc = new Scanner(System.in);
-	System.out.println("Enter the size of buildings");
+	System.out.println("Enter the no. of floors in the buildings");
 	int size = sc.nextInt();
 	int[] array2 = new int[size];
 	for(int i=0;i<size;i++) {
@@ -22,7 +22,9 @@ public static void main(String[] args) {
 		array2[i]= floor;
 	}
 	System.out.println(array);
-	comp.comparator(array, pq,array2);
+	System.out.println("The order of construction is as follows:");
+	System.out.println();
+        comp.comparator(array, pq,array2);
 	
 }
 }
